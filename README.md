@@ -1,10 +1,11 @@
 # docker-hbase
-Hbase Distributed setup using Docker
+Docker containers for Hadoop, Hbase and Apache Phoenix setup.
 
+## Usage Example
 
-=Usage Example
+To start a container with ssh support.
 
-To start a container with ssh support
+authorized_keys added for having password less ssh between containers.
 
 ```shell
 env bash -c 'cm=cm1 ; docker run -d -h $cm --name $cm -v /Users/anupam/git/docker-hbase/host-env/dockers_rsa.pub:/root/.ssh/authorized_keys:ro \
